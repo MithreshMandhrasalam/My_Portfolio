@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="portfolio.css" />
+    <title>Resume</title>
+  </head>
+  <body>
+    <header>
+      <nav class="Nav">
+        <a href="Home.html" class="logo">Mithresh M</a>
+        <ul class="Nav-links">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="Resume.html">Resume</a></li>
+        </ul>
+        <a class="contact-btn" href="Contact.html">Contact Me</a>
+      </nav>
+    </header>
+
+    <!-- Resume Section -->
+    <section
+      id="resume"
+      class="resume-section"
+      style="text-align: center; padding: 50px 20px"
+    >
+      <h2 style="font-size: 36px; margin-bottom: 20px">My Resume</h2>
+
+      <!-- Embedded Resume PDF -->
+      <iframe
+        src="/Users/mithresh/Desktop/Mithresh_Resume.pdf"
+        width="80%"
+        height="600px"
+        style="border: 1px solid #ccc; border-radius: 10px"
+        title="Resume PDF"
+      >
+      </iframe>
+
+      <!-- Buttons -->
+      <div style="margin-top: 25px">
+        <!-- Download Button -->
+        <a
+          href="/Users/mithresh/Desktop/Mithresh_Resume.pdf"
+          download="/Users/mithresh/Desktop/Mithresh_Resume.pdf"
+          class="btn"
+          style="
+            margin-right: 15px;
+            padding: 12px 25px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: 0.3s;
+          "
+        >
+          <i class="fa-solid fa-download" style="margin-right: 8px"></i>Download
+        </a>
+      </div>
+    </section>
+
+    <!-- JavaScript for Print -->
+    <script></script>
+  </body>
+</html>
