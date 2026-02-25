@@ -1,4 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Satisfy&display=swap");
+
+/* ─── Heading Font ─── */
+:root {
+  --font-heading: 'Satisfy', cursive;
+  --font-body:    'Inter', sans-serif;
+}
 
 /* ───────────── VARIABLES ───────────── */
 :root {
@@ -119,9 +125,10 @@ header {
 .logo {
   text-decoration: none;
   color: var(--text-primary);
-  font-weight: 800;
-  font-size: 26px;
-  letter-spacing: -0.5px;
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 0;
   background: var(--accent-gradient);
   -webkit-background-clip: text;
   background-clip: text;
@@ -246,15 +253,16 @@ header {
 }
 
 .home-name {
-  font-size: 4rem;
+  font-family: var(--font-heading);
+  font-size: 4.5rem;
   margin-top: 30px;
   margin-bottom: 10px;
-  font-weight: 800;
+  font-weight: 400;
   background: var(--accent-gradient);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  letter-spacing: -1px;
+  letter-spacing: 0;
 }
 
 .home-title {
@@ -340,9 +348,10 @@ header {
 
 .about-card h2,
 .experience-title {
+  font-family: var(--font-heading);
   font-size: 2.5rem;
   margin-bottom: 20px;
-  font-weight: 700;
+  font-weight: 400;
   color: var(--text-primary);
   background: var(--accent-gradient);
   -webkit-background-clip: text;
@@ -376,9 +385,10 @@ header {
 }
 
 .tech-stack-title {
+  font-family: var(--font-heading);
   font-size: 2.5rem;
   margin-bottom: 20px;
-  font-weight: 700;
+  font-weight: 400;
   background: var(--accent-gradient);
   -webkit-background-clip: text;
   background-clip: text;
@@ -410,8 +420,9 @@ header {
 }
 
 .category-title {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 400;
   color: var(--text-primary);
   margin-bottom: 40px;
 }
@@ -633,6 +644,7 @@ header {
 }
 
 .page-title {
+  font-family: var(--font-heading);
   font-size: 4rem;
   margin-bottom: 3rem;
   text-align: center;
@@ -640,7 +652,7 @@ header {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 800;
+  font-weight: 400;
 }
 
 .content-wrapper {
@@ -656,8 +668,9 @@ header {
 }
 
 .contact-info h2 {
+  font-family: var(--font-heading);
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 1.5rem;
   color: var(--text-primary);
 }
