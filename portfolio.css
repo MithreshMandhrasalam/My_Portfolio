@@ -255,16 +255,16 @@ header {
 
 .home-name {
   font-family: 'Times New Roman', Georgia, serif;
-  font-size: 5rem;
+  font-size: 3.4rem;
   margin-top: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   font-weight: 900;
   background: var(--accent-gradient);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: 2px;
-  filter: drop-shadow(0 0 18px rgba(34, 211, 238, 0.28));
+  filter: drop-shadow(0 0 14px rgba(34, 211, 238, 0.25));
 }
 
 .home-title {
@@ -921,9 +921,8 @@ header {
 }
 
 .proj-card:hover {
-  transform: translateY(-12px);
-  border-color: rgba(34, 211, 238, 0.4);
-  box-shadow: 0 24px 48px rgba(34, 211, 238, 0.12);
+  border-color: rgba(34, 211, 238, 0.45);
+  box-shadow: 0 24px 48px rgba(34, 211, 238, 0.15);
 }
 
 .proj-img-wrap {
@@ -1086,7 +1085,6 @@ header {
 .cert-card:hover {
   opacity: 1;
   filter: saturate(1) brightness(1);
-  transform: perspective(900px) rotateY(-6deg) rotateX(4deg) translateY(-10px);
   border-color: rgba(34, 211, 238, 0.45);
   box-shadow:
     0 24px 48px rgba(34, 211, 238, 0.14),
