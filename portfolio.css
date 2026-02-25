@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Satisfy&family=Raleway:wght@700;800;900&display=swap");
 
 /* ─── Heading Font ─── */
 :root {
@@ -148,12 +148,13 @@ header {
 
 .Nav-links a {
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--text-secondary);
-  font-size: 16px;
+  font-size: 19px;
   transition: all 0.3s ease;
   position: relative;
   padding-bottom: 5px;
+  letter-spacing: 0.3px;
 }
 
 .Nav-links a::after {
@@ -253,16 +254,17 @@ header {
 }
 
 .home-name {
-  font-family: var(--font-heading);
-  font-size: 4.5rem;
-  margin-top: 30px;
+  font-family: 'Times New Roman', Georgia, serif;
+  font-size: 5rem;
+  margin-top: 16px;
   margin-bottom: 10px;
-  font-weight: 400;
+  font-weight: 900;
   background: var(--accent-gradient);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  letter-spacing: 0;
+  letter-spacing: 2px;
+  filter: drop-shadow(0 0 18px rgba(34, 211, 238, 0.28));
 }
 
 .home-title {
