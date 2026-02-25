@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects – Mithresh M</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-
     <!-- Linking the external CSS -->
     <link rel="stylesheet" href="portfolio.css" />
   </head>
@@ -22,99 +22,103 @@
           <li><a href="Projects.html">Projects</a></li>
           <li><a href="Resume.html">Resume</a></li>
         </ul>
-
         <a class="contact-btn" href="Contact.html">Contact Me</a>
       </nav>
     </header>
 
     <h1 class="page-title">Projects</h1>
-    <div class="projects-container">
-      <!-- Project 1 -->
-      <div class="project-card">
-        <div class="project-date">May 2024</div>
-        <h3 class="project-title">Object Avoidance and Line Follower Robot</h3>
-        <p class="project-text">
-          • Engineered an autonomous robot that follows black line paths while
-          dynamically avoiding unexpected obstacles.<br />
-          • Coded intelligent navigation logic in C on an Arduino
-          microcontroller, enabling real-time decision-making based on IR sensor
-          inputs.<br />
-          • Integrated dual IR sensor arrays for precise line tracking and
-          front-facing sensors for obstacle detection.<br />
-          • Demonstrated seamless hardware-software coordination, sensor fusion,
-          and adaptive path control in dynamic environments.
-        </p>
 
-        <div class="project-bottom">
-          <a
-            href="https://github.com/yourusername/your-repo"
-            target="_blank"
-            class="project-link"
-            >View Code</a
-          >
-          <div class="project-tools">
-            <i class="fa-brands fa-arduino"
-              ><span class="tooltip">Arduino</span></i
-            >
-            <i class="fa-solid fa-code"
-              ><span class="tooltip">C Programming</span></i
-            >
-            <i class="fa-solid fa-microchip"
-              ><span class="tooltip">Embedded Systems</span></i
-            >
-            <i class="fa-solid fa-satellite-dish"
-              ><span class="tooltip">IR Sensors</span></i
+    <div class="projects-grid">
+      <!-- Project 1: Robot -->
+      <div class="proj-card">
+        <div class="proj-img-wrap">
+          <img src="assets/robot_project.png" alt="Object Avoidance Robot" />
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-name">Object Avoidance &amp; Line Follower Robot</h3>
+          <div class="proj-badges">
+            <span class="proj-badge">Arduino</span>
+            <span class="proj-badge">C</span>
+            <span class="proj-badge">Embedded Systems</span>
+            <span class="proj-badge">IR Sensors</span>
+          </div>
+          <p class="proj-desc">
+            Autonomous robot that follows black-line paths while dynamically
+            avoiding obstacles — using dual IR sensor arrays and real-time
+            decision logic on Arduino.
+          </p>
+          <div class="proj-links">
+            <a
+              href="https://github.com/yourusername/your-repo"
+              target="_blank"
+              class="proj-link-btn code"
+              ><i class="fa-solid fa-code"></i> Code</a
             >
           </div>
         </div>
       </div>
 
-      <!-- Project 2 -->
-      <div class="project-card">
-        <div class="project-date">Jan 2025</div>
-        <h3 class="project-title">
-          MoneyKids – Autism-Friendly Kids Money Management & Budgeting App
-        </h3>
-        <p class="project-text">
-          • Developed a full-stack financial literacy web application to help
-          children with autism learn budgeting and saving skills.<br />
-          • Built secure authentication using JWT and bcryptjs with MongoDB
-          integration.<br />
-          • Designed a virtual wallet system separating spending and savings
-          with real-time balance updates.<br />
-          • Implemented gamified quizzes, level progression, badges, and savings
-          goal tracking.<br />
-          • Integrated Chart.js dashboards and framer-motion animations for
-          visual learning and positive reinforcement.
-        </p>
-
-        <div class="project-bottom">
-          <div>
+      <!-- Project 2: MoneyKids -->
+      <div class="proj-card">
+        <div class="proj-img-wrap">
+          <img src="assets/moneykids_project.png" alt="MoneyKids App" />
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-name">MoneyKids – Kids Money Management App</h3>
+          <div class="proj-badges">
+            <span class="proj-badge">React</span>
+            <span class="proj-badge">Next.js</span>
+            <span class="proj-badge">MongoDB</span>
+            <span class="proj-badge">JWT</span>
+            <span class="proj-badge">Chart.js</span>
+          </div>
+          <p class="proj-desc">
+            Full-stack financial literacy app helping children with autism learn
+            budgeting. Features a virtual wallet, gamified quizzes, savings
+            goals, and animated dashboards.
+          </p>
+          <div class="proj-links">
             <a
               href="https://money-kids.vercel.app/"
               target="_blank"
-              class="project-link"
-              >Live Demo</a
+              class="proj-link-btn live"
+              ><i class="fa-solid fa-globe"></i> Live</a
             >
             <a
               href="https://github.com/MithreshMandhrasalam/MoneyKids"
               target="_blank"
-              class="project-link"
-              >View Code</a
+              class="proj-link-btn code"
+              ><i class="fa-solid fa-code"></i> Code</a
             >
           </div>
+        </div>
+      </div>
 
-          <div class="project-tools">
-            <i class="fa-brands fa-react"><span class="tooltip">React</span></i>
-            <i class="fa-brands fa-js"><span class="tooltip">Next.js</span></i>
-            <i class="fa-solid fa-database"
-              ><span class="tooltip">MongoDB</span></i
-            >
-            <i class="fa-solid fa-lock"
-              ><span class="tooltip">JWT Auth</span></i
-            >
-            <i class="fa-solid fa-chart-pie"
-              ><span class="tooltip">Chart.js</span></i
+      <!-- Project 3: Sociogram -->
+      <div class="proj-card">
+        <div class="proj-img-wrap">
+          <img src="assets/sociogram_project.png" alt="Sociogram v2" />
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-name">Sociogram v2 – Real-Time Chat App</h3>
+          <div class="proj-badges">
+            <span class="proj-badge">React</span>
+            <span class="proj-badge">Node.js</span>
+            <span class="proj-badge">MongoDB</span>
+            <span class="proj-badge">Socket.io</span>
+            <span class="proj-badge">JWT</span>
+          </div>
+          <p class="proj-desc">
+            Modern real-time chat application with email authentication, secure
+            messaging, image sharing, and live online status — built with the
+            MERN stack.
+          </p>
+          <div class="proj-links">
+            <a
+              href="https://github.com/MithreshMandhrasalam"
+              target="_blank"
+              class="proj-link-btn code"
+              ><i class="fa-solid fa-code"></i> Code</a
             >
           </div>
         </div>

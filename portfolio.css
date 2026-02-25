@@ -40,7 +40,7 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: 'Times New Roman', Georgia, serif;
   font-size: 18px;
   background: linear-gradient(135deg, #020c14 0%, #041e30 45%, #071e2e 100%);
   background-attachment: fixed;
@@ -348,10 +348,9 @@ header {
 
 .about-card h2,
 .experience-title {
-  font-family: var(--font-heading);
-  font-size: 2.5rem;
+  font-size: 1.9rem;
   margin-bottom: 20px;
-  font-weight: 400;
+  font-weight: 700;
   color: var(--text-primary);
   background: var(--accent-gradient);
   -webkit-background-clip: text;
@@ -385,10 +384,9 @@ header {
 }
 
 .tech-stack-title {
-  font-family: var(--font-heading);
-  font-size: 2.5rem;
+  font-size: 1.9rem;
   margin-bottom: 20px;
-  font-weight: 400;
+  font-weight: 700;
   background: var(--accent-gradient);
   -webkit-background-clip: text;
   background-clip: text;
@@ -420,10 +418,11 @@ header {
 }
 
 .category-title {
-  font-family: var(--font-heading);
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: var(--text-primary);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
   margin-bottom: 40px;
 }
 
@@ -668,9 +667,8 @@ header {
 }
 
 .contact-info h2 {
-  font-family: var(--font-heading);
-  font-size: 2.5rem;
-  font-weight: 400;
+  font-size: 2rem;
+  font-weight: 700;
   margin-bottom: 1.5rem;
   color: var(--text-primary);
 }
@@ -868,5 +866,286 @@ header {
   .page-title,
   .home-name {
     font-size: 3rem;
+  }
+}
+
+/* ───────────── GREETING + WAVE ───────────── */
+.home-greeting {
+  font-size: 1.6rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  margin-bottom: 8px;
+  font-family: 'Times New Roman', Georgia, serif;
+}
+
+.wave {
+  display: inline-block;
+  animation: wave-anim 2.5s ease-in-out infinite;
+  transform-origin: 70% 70%;
+  font-style: normal;
+}
+
+@keyframes wave-anim {
+  0%   { transform: rotate(  0deg) }
+  10%  { transform: rotate( 14deg) }
+  20%  { transform: rotate( -8deg) }
+  30%  { transform: rotate( 14deg) }
+  40%  { transform: rotate( -4deg) }
+  50%  { transform: rotate( 10deg) }
+  60%  { transform: rotate(  0deg) }
+  100% { transform: rotate(  0deg) }
+}
+
+/* ───────────── PROJECT GRID (new) ───────────── */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  padding: 10px 60px 60px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.proj-card {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.proj-card:hover {
+  transform: translateY(-12px);
+  border-color: rgba(34, 211, 238, 0.4);
+  box-shadow: 0 24px 48px rgba(34, 211, 238, 0.12);
+}
+
+.proj-img-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 28px 20px 16px;
+}
+
+.proj-img-wrap img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(34, 211, 238, 0.3);
+  box-shadow: 0 0 24px rgba(34, 211, 238, 0.2);
+  transition: transform 0.4s ease;
+}
+
+.proj-card:hover .proj-img-wrap img {
+  transform: scale(1.07);
+  box-shadow: 0 0 32px rgba(34, 211, 238, 0.35);
+}
+
+.proj-body {
+  padding: 0 24px 28px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.proj-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 14px;
+  font-family: 'Times New Roman', Georgia, serif;
+}
+
+.proj-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.proj-badge {
+  background: rgba(34, 211, 238, 0.07);
+  border: 1px solid rgba(34, 211, 238, 0.22);
+  color: var(--accent-solid);
+  padding: 3px 11px;
+  border-radius: 20px;
+  font-size: 11.5px;
+  font-weight: 700;
+  font-family: 'Times New Roman', Georgia, serif;
+}
+
+.proj-desc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  text-align: center;
+  flex: 1;
+  margin-bottom: 22px;
+}
+
+.proj-links {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.proj-link-btn {
+  padding: 9px 22px;
+  border-radius: 22px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s;
+  font-family: 'Times New Roman', Georgia, serif;
+}
+
+.proj-link-btn.live {
+  background: var(--accent-gradient);
+  color: #020c14;
+}
+
+.proj-link-btn.code {
+  background: transparent;
+  border: 1px solid rgba(34, 211, 238, 0.4);
+  color: var(--accent-solid);
+}
+
+.proj-link-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(34, 211, 238, 0.25);
+}
+
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px 30px 50px;
+  }
+}
+
+@media (max-width: 640px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    padding: 10px 20px 40px;
+  }
+}
+
+/* ───────────── CERTIFICATES ───────────── */
+.certs-section {
+  max-width: 960px;
+  margin: 60px auto;
+  padding: 0 20px;
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.certs-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  margin-bottom: 36px;
+}
+
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.cert-card {
+  background: rgba(4, 24, 36, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 28px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  cursor: pointer;
+  /* faded by default */
+  opacity: 0.38;
+  filter: saturate(0.2) brightness(0.7);
+  transition: all 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: perspective(900px) rotateY(0deg) rotateX(0deg);
+  text-decoration: none;
+}
+
+.cert-card:hover {
+  opacity: 1;
+  filter: saturate(1) brightness(1);
+  transform: perspective(900px) rotateY(-6deg) rotateX(4deg) translateY(-10px);
+  border-color: rgba(34, 211, 238, 0.45);
+  box-shadow:
+    0 24px 48px rgba(34, 211, 238, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.cert-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.45;
+  font-family: 'Times New Roman', Georgia, serif;
+}
+
+.cert-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  flex: 1;
+  font-family: 'Times New Roman', Georgia, serif;
+}
+
+.cert-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.cert-issuer {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  font-family: 'Times New Roman', Georgia, serif;
+}
+
+.cert-issuer strong {
+  color: var(--accent-solid);
+  font-weight: 700;
+}
+
+.cert-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(34, 211, 238, 0.09);
+  border: 1px solid rgba(34, 211, 238, 0.22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .certs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 580px) {
+  .certs-grid {
+    grid-template-columns: 1fr;
   }
 }
